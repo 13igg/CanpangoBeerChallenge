@@ -16,10 +16,9 @@ class addBeer extends Component{
      }
 
     addBeer = async (beer) => {
-        console.log('BEREEEER BELOWW')
-        console.log(beer);
-        var resp = await Endpoints.addBeer(beer);
-        console.log(resp);
+        await Endpoints.addBeer(beer);
+        
+        this.props.history.push('/');
     }
 
     render()
@@ -33,10 +32,9 @@ class addBeer extends Component{
                 </header>
                 <br/>
                 <AddBeer categories={this.state.categories} addBeer={this.addBeer}/>   
-            
             </div>                
           );
     }
 }
 
-export default addBeer;
+export default withRouter(addBeer);

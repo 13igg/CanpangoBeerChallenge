@@ -57,9 +57,21 @@
   text-align: right;
 }
 
-
+/*accordian beer display*/
 .category_display_accordian{
   box-shadow: none !important
+}
+
+.tall_h1{
+  height: 35px
+}
+
+.floaty_div_left{
+  float:left
+}
+
+.floaty_div_right{
+  float:right
 }
 
 #categories_checkbox{
@@ -67,21 +79,12 @@
 }
 
 
-/*Beer Cards*/
-.beer_card:hover{
-  background-color: #eee !important;
-} 
-  
-.title{
-  /*border-top-color: #fbb040 !important;*/
-}
-
-
-
 /*Search Bar CSS*/
 .flexDiv{
-  
   justify-content: space-between;
+}
+#beer_search_container{
+  min-width: 1250px;  
 }
 
 #search_bar{
@@ -126,6 +129,15 @@
 
 .beer_detail_description{
   font-size: 25px;
+}
+
+/*Beer Cards*/
+.beer_card:hover{
+  background-color: #eee !important;
+} 
+  
+.beer_detail_card_holder{
+  padding: 10px;
 }
 
 #beer_buttons{

@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {Button, Container, Form} from 'semantic-ui-react'
 
-
 class AddBeer extends Component{
     constructor(props){
         super(props);
@@ -15,7 +14,6 @@ class AddBeer extends Component{
                     "category": ""
             }
     }
-    
 
     getCategoryDropdownOptions = () => {
         var categoriesCopy = this.props.categories.slice();
@@ -28,8 +26,6 @@ class AddBeer extends Component{
       }
 
       handleData = (event, field) => {
-        // const { beer } = this.state;
-        // beer[field] = event;
         this.setState({ field: event });        
       }
 
@@ -53,13 +49,6 @@ class AddBeer extends Component{
                              
                     </Form.Group>
                     
-                    
-                    
-                    
-
-
-                
-
                     <Button primary type='submit'>Submit</Button>
                 </Container>
             </Form>

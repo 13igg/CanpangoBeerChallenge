@@ -7,7 +7,7 @@ const Header = ({beerSearch}) =>{
     return(
         <header className="App-header">
             <h1 className="App-title">Beer Finder!</h1>
-            <Container style={{'min-width':"1250px"}}>
+            <Container id="beer_search_container">
                 <div className="flexDiv">
                 <Label id="search_bar_label" size="huge">Search For Beer by Name: </Label>
                 <SearchBar onSearchTermChange={beerSearch}/>                 

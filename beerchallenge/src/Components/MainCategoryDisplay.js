@@ -30,13 +30,13 @@ class MainCategoryDisplay extends Component {
                         return(
                             <div style={{'display': !this.props.showAll && this.getBeerCount(category) === 0 ? "none" : ''}}>
                                 <Accordion.Title active={activeIndex === category.key} index={category.key} onClick={this.handleClick}>
-                                    <h1 style = {{height:'35px'}}>
-                                        <div style={{'float':'left'}}>
+                                    <h1 className="tall_h1">
+                                        <div className="floaty_div_left">
                                             {category.name}
                                             <Icon name='dropdown' />
                                         </div> 
 
-                                        <div style={{'float':'right'}}>
+                                        <div className="floaty_div_right">
                                             {this.getBeerCount(category)} <Icon name="beer"/> 
                                         </div>
                                                                 

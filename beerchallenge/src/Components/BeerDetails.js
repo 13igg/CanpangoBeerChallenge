@@ -4,7 +4,7 @@ import {Container, Card, Button} from 'semantic-ui-react'
 const BeerDetails = ({beer, category, deleteBeer}) => {
     
     return(
-            <Container style={{'padding':'10px'}}>                
+            <Container className="beer_detail_card_holder"> 
                 <Card fluid color="orange">
                     <Card.Content>
                         <Card.Header className="beer_detail_header">

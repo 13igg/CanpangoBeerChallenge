@@ -1,0 +1,132 @@
+.App {
+  text-align: center;
+}
+
+#header_nav_link{
+  text-decoration: none;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 200px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 45px;
+  font-weight: 500;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/*Category */
+#category_drop_down{
+  border-color: #222;
+  margin-right: 10px;
+  width: auto;
+}
+
+#category_drop_down .text{
+  font-family: 'Lato','Helvetica Neue',Arial,Helvetica,sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  padding-top: 0px;
+  flex: left;
+}
+
+#search_show_0_cats{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  text-align: right;
+}
+
+
+.category_display_accordian{
+  box-shadow: none !important
+}
+
+#categories_checkbox{
+  max-width: 5px;
+}
+
+
+/*Beer Cards*/
+.beer_card:hover{
+  background-color: #eee !important;
+} 
+  
+.title{
+  /*border-top-color: #fbb040 !important;*/
+}
+
+
+
+/*Search Bar CSS*/
+.flexDiv{
+  
+  justify-content: space-between;
+}
+
+#search_bar{
+  min-width: 725px;
+  height: 70px;
+  background: #222;
+  border-color: #fbb040;
+  color: #fbb040;
+  font-size: 24px;
+  
+}
+
+#search_bar_label{
+  text-align: left;  
+  height: 70px;
+  background: none;
+  padding-top: 25px;
+  font-size: 24px;
+  color: #fbb040
+}
+
+
+/* ListGroupings */
+.list-group-item{
+  cursor:pointer;
+}
+
+.list-group-item:hover{
+  background-color: #eee;
+}
+
+/* BeerDetail */
+
+.beer_detail_header{
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.beer_detail_meta{
+  font-size: 20px !important;
+}
+
+.beer_detail_description{
+  font-size: 25px;
+}
+
+#beer_buttons{
+  width: auto; 
+  float: right;
+}
+
+#delete_beer{
+  width: 125px;
+  float: right;
+}

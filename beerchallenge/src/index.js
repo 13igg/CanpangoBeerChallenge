@@ -8,15 +8,16 @@ import 'semantic-ui-css/semantic.min.css';
 
 import Index from './Views/index';
 import beerDetails from './Views/beerDetails';
+import addBeer from './Views/addBeer';
 
 ReactDOM.render(
     <Router>
       <Switch>
         <Route path="/" exact component={Index} />
         <Route path="/beerdetails/:beerId" component={beerDetails} />        
-        {/*<Route path="/contact" component={Contact} />  
+        <Route path="/addbeer" component={addBeer} />  
   
-        <Route component={NotFound} status={404} /> */}
+        {/*<Route component={NotFound} status={404} /> */}
       </Switch>
     </Router>,
     document.getElementById('root'),

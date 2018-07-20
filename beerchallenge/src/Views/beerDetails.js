@@ -21,23 +21,23 @@ class beerDetails extends Component{
 
     deleteBeer = async () => {
         console.log(this.state)
-//        var resp = await Endpoints.deleteBeer(this.state.beer.url)
-//        console.log(resp)
+        var resp = await Endpoints.deleteBeer(this.state.beer.url)
+        console.log(resp)
 
         this.props.history.push('/');
     }
 
     render(){
-    return(
-            <div>
-                <header className="App-header">
-                        <h1 className="App-title"> 
-                            <NavLink id="header_nav_link" to='/' > Libations Tracker!</NavLink>
-                        </h1>                         
-                </header>
-                <BeerDetails beer={this.state.beer} category={this.state.category} deleteBeer={this.deleteBeer}/>   
-            </div>
-        )
+        return(
+                <div>
+                    <header className="App-header">
+                            <h1 className="App-title"> 
+                                <NavLink id="header_nav_link" to='/' > Beer Finder!</NavLink>
+                            </h1>                         
+                    </header>
+                    <BeerDetails beer={this.state.beer} category={this.state.category} deleteBeer={this.deleteBeer}/>   
+                </div>
+            )
     }
 }
 

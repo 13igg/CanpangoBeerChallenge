@@ -12,16 +12,16 @@ async function httpGet(url){
     return fetch(url).then(response => response.json());
 }
 
-// async function httpPut(url, body){
-//     return fetch(url, {
-//             headers: { 
-//                 'Content-Type': 'application/json'   
-//             },
-//             method: 'put',
-//             body: body
-//         })
-//         .then((response) => response.json());
-// }
+async function httpPost(url, body){
+    return fetch(url, {
+            headers: { 
+                'Content-Type': 'application/json'   
+            },
+            method: 'post',
+            body: JSON.stringify(body)            
+        })
+        .then((response) => response.json());
+}
 
 async function httpDelete(url){
     return fetch(url, {method: 'delete'})
@@ -47,6 +47,12 @@ export function searchForBeer(query){
 export function deleteBeer(url){
     console.log(`deleting beer: ${url}`)
     httpDelete(url)
+}
+
+export function addBeer(beer){
+    console.log(`adding beer to : ${rootUrl+beersUri}`)
+    console.log(beer);
+    httpPost(rootUrl+beersUri, beer)
 }
 
 
